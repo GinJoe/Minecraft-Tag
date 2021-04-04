@@ -33,9 +33,10 @@ public class Main extends JavaPlugin
 		new PlayerHitListener(this); //Checks if someone has been tagged
 		new PlayerMoveListener(this); //Updates the compass
 		new PlayerDeathListener(this); //If someone dies ends game
-		new PlayerInteractListener(this); //Goves you the y coord
+		new PlayerInteractListener(this); //Gives you the y coord of the player
 	}
 	
+	// When The game has ended this function is called and resets the variables and gives a message to the winner
 	public void endTheGame(String winner)
 	{
 		//Conditional reset
@@ -49,6 +50,7 @@ public class Main extends JavaPlugin
 		{
 			Bukkit.broadcastMessage("§8 Match abandoned");
 		}
+		
 		//General Reset
 		this.gameInProgress = false;
 		WorldBorder border = hunter.getWorld().getWorldBorder();

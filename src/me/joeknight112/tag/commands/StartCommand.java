@@ -66,6 +66,7 @@ public class StartCommand implements CommandExecutor
 				if (p.getName().equals(args[1])) {hunted = p;}
 			}
 			
+			//Checking if the same username is used for both
 			if (args[0].equals(args[1]))
 			{
 				sender.sendMessage("The two people can't be the same!");
@@ -200,7 +201,7 @@ public class StartCommand implements CommandExecutor
 			//Start Game
 			plugin.gameInProgress = true;
 			
-			//Set Time limit to 2 minutes. And run runnable here
+			//Set Time limit to 2 minutes. And run timer here
 			Timer timer = new Timer(plugin);
 			timer.runTaskTimer(plugin, 0, 20*1);
 			
