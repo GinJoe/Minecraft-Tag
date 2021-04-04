@@ -1,0 +1,11 @@
+name: Tag
+version: 1.1
+author: JoeMoncrieff
+main: me.joeknight112.tag.Main
+description: Added Messages. Added better loading plan. Hopefully stop command works now.
+
+commands:
+  fight:
+    description: starts a game of tag.
+  breakitup:
+    description: ends a game of tag before resolution.

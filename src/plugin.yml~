@@ -1,0 +1,8 @@
+name: Tag
+version: 1.0
+author: JoeMoncrieff
+main: me.joeknight112.tag.Main
+description: My first attempt at tag for Minecraft.
+
+commands:
+  fight:
